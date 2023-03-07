@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <title>blogapp</title>
+  </head>
+  <body>
+    <p th:text="${message}"></p>
+    <div class="task-container" th:each="list : ${list}">
+    	<div th:text="${list.title}"></div>
+    	<div th:text="${list.detail}"></div>
+    </div>
+  </body>
+</html>
