@@ -25,7 +25,7 @@ export async function getAllBlogIds() {
 
 export async function getBlogData(id) {
   const res = await fetch(
-    new URL(`${process.env.NEXT_PUBLIC_RESTAPI_URL}api/blog/{id}/`)
+    new URL(`${process.env.NEXT_PUBLIC_RESTAPI_URL}api/blog/${id}/`)
   );
   const blog = res.json();
   return blog;

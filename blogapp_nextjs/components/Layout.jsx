@@ -8,7 +8,7 @@ const Layout = ({ children, title = "Default title" }) => {
         <title>{title}</title>
       </Head>
       <Navbar />
-      <main className="my-6 mx-auto">{children}</main>
+      <main>{children}</main>
       <footer className="fixed bottom-0 left-0 w-full h-6 flex justify-center items-center text-gray-500 text-sm">
         @BlogApp
       </footer>

@@ -5,7 +5,7 @@ import { getAllBlogData } from "../lib/blogs";
 export default function Home({ filteredBlogs }) {
   return (
     <Layout title="ブログ一覧">
-      <div className="flex justify-around mx-5 min-h-[calc(100vh_-_100px)]">
+      <div className="my-5 flex justify-around mx-5 min-h-[calc(100vh_-_100px)]">
         <div className="p-3 my-3 bg-gray-300 w-3/5">
           <ul>
             {filteredBlogs &&
